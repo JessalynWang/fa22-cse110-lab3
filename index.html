@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 2: HTML Meeting Notes</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fake meeting notes with HTML">
+    <link rel="icon" type="image/x-icon" href="cuteDog.ico">
+  </head>
+  <body>
+    <header>Team 24 Meeting Notes</header>
+    <nav>
+        <a href="https://jessalynwang.github.io/CSE110-UserPage/">Jessalyn's User Page</a>
+    </nav>
+    <main>
+        <h1>Fake Meeting (Date: 10/9)</h1>
+        <h2>Purpose: Discussion of tasks completed and next steps</h2>
+        <h3>Note taker: Jessalyn Wang</h3>
+
+        <section>
+            <div>
+                <hr>
+                <p><i>Pre-meeting notes</i></p>
+            </div>
+            <div>
+                <ul>
+                    <li>Wanted to get x milestone done this week</li>
+                    <li>Need an update on Jess exploring y package</li>
+                    <li>Remind everyone there is team bonding next week</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <hr>
+                <p><b>Notes</b></p>
+            </div>
+            <div>
+                <p><strong>Main point</strong><br>We need to add this feature because <em>the flow of our project is illogical without it</em></p>
+                <ol>
+                    <li>Milestone x complete</li>
+                    <li>Post milestone x reflection reveals <span>we need a new feature</span></li>
+                    <li>Design for new feature created</li>
+                </ol>
+
+                <p>Updated system design for new feature</p>
+                <img src="sysdesign.jpg" alt="sys design diagram">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <hr>
+                <p>Icebreakers</p>
+            </div>
+            <div>
+                <p>Favorite tiktok of Ann:</p>
+                <video controls>
+                    <source src="bunnytiktok.MP4" type="video/mp4">
+                    Video not supported :(
+                </video>
+                <p>Cool song Leon found:</p>
+                <audio controls>
+                    <source src="powerful-beat-121791.mp3" type="audio/mp3">
+                    Audio not supported :(
+                </audio>
+                <details>
+                    <summary>Fun anecdote by Trinity</summary>
+                    <p>Trinity's dog Bella was born on Christmas Day!</p>
+                </details>
+            </div>
+        </section>
+        <section>
+            <div>
+                <hr>
+                <p>Mid Quarter Feedback Form</p>
+            </div>
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Logistics</legend>
+                        <label>Name: </label>
+                        <input type="text" id="name" name="name" placeholder="First and Last">
+                        <br>
+                        <label>Date: </label>
+                        <input type="date" id="date">
+                        <br>
+                        <label>Feedback</label>
+                        <br>
+                        <textarea id="feedback" rows=10 cols=50 placeholder="Feedback here..."></textarea>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Check In</legend>
+                        <label>How do you feel?</label>
+                        <br>
+                        <div>
+                            <input type="radio" id="e1" name="emotion" value="sad">
+                            <label for="e1">I am sad</label><br>
+                            <input type="radio" id="e2" name="emotion" value="happy">
+                            <label for="e2">I am happy</label><br>
+                            <input type="radio" id="e3" name="emotion" value="stressed">
+                            <label for="e3">I am stressed</label><br><br>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Other</legend>
+                        <label>When are you free for team bonding?</label>
+                        <br>
+                        <div>
+                            <input type="checkbox" id="d1" name="emotion" value="10/10">
+                            <label for="d1">10/10</label><br>
+                            <input type="checkbox" id="d2" name="emotion" value="10/11">
+                            <label for="d2">10/11</label><br>
+                            <input type="checkbox" id="d3" name="emotion" value="10/12">
+                            <label for="d3">10/12</label><br><br>
+                        </div>
+                        <label for="todo">What do you want to do?</label>
+                        <select name="todo" id="todo">
+                            <option value="Froyo">Froyo</option>
+                            <option value="Tacos">Tacos</option>
+                            <option value="Pizza">Pizza</option>
+                        </select>
+                        <br>
+                        <label for="hero">Choose your superhero from the list:</label>
+                        <br>
+                        <input list="heros" name="hero" id="hero">
+                        <datalist id="heros">
+                            <option value="Superman">
+                            <option value="Deadpool">
+                            <option value="Hulk">
+                            <option value="Batman">
+                            <option value="Thor">
+                        </datalist>
+                    </fieldset>
+
+                    <br>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <hr>
+    </main>
+    <footer>Created for CSE 110</footer>
+  </body>
+</html>
