@@ -15,13 +15,15 @@
     </header>
     <nav>
         <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
-        <a href="https://www.w3schools.com/default.asp">W3Schools</a>
+        <a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools</a>
         <a href="https://fonts.google.com/">Custom Fonts</a>
     </nav>
     <main>
-        <h1>Fake Meeting (Date: 10/9)</h1>
-        <h2>Purpose: Discussion of tasks completed and next steps</h2>
-        <h3>Note taker: Jessalyn Wang</h3>
+        <div class="metadata">
+            <h1>Fake Meeting (Date: 10/9)</h1>
+            <h2>Purpose: Discussion of tasks completed and next steps</h2>
+            <h3>Note taker: Jessalyn Wang</h3>
+        </div>
 
         <section>
             <div>
@@ -42,16 +44,18 @@
                 <hr>
                 <p><b>Notes</b></p>
             </div>
-            <div>
-                <p><strong>Main point</strong><br>We need to add this feature because <em>the flow of our project is illogical without it</em></p>
+            <div class="during-meeting-notes">
+                <p class="main-point"><strong>Main point</strong><br>We need to add this feature because <em>the flow of our project is illogical without it</em></p>
                 <ol>
                     <li>Milestone x complete</li>
                     <li>Post milestone x reflection reveals <span>we need a new feature</span></li>
                     <li>Design for new feature created</li>
                 </ol>
 
-                <p>Updated system design for new feature</p>
-                <img src="sysdesign.jpg" alt="sys design diagram">
+                <div>
+                    <p>Updated system design for new feature</p>
+                    <img class="media" src="sysdesign.jpg" alt="sys design diagram">
+                </div>
             </div>
         </section>
 
@@ -60,17 +64,21 @@
                 <hr>
                 <p>Icebreakers</p>
             </div>
-            <div>
-                <p>Favorite tiktok of Ann:</p>
-                <video controls>
-                    <source src="bunnytiktok.MP4" type="video/mp4">
-                    Video not supported :(
-                </video>
-                <p>Cool song Leon found:</p>
-                <audio controls>
-                    <source src="powerful-beat-121791.mp3" type="audio/mp3">
-                    Audio not supported :(
-                </audio>
+            <div class="anecdote">
+                <span>
+                    <p>Favorite tiktok of Ann:</p>
+                    <video controls>
+                        <source src="bunnytiktok.MP4" type="video/mp4">
+                        Video not supported :(
+                    </video>
+                </span>
+                <span>
+                    <p>Cool song Leon found:</p>
+                    <audio controls>
+                        <source src="powerful-beat-121791.mp3" type="audio/mp3">
+                        Audio not supported :(
+                    </audio>
+                </span>
                 <details>
                     <summary>Fun anecdote by Trinity</summary>
                     <p>Trinity's dog Bella was born on Christmas Day!</p>
@@ -143,12 +151,14 @@
                     </fieldset>
 
                     <br>
-                    <button>Submit</button>
+                    <button id="submit">Submit</button>
                 </form>
             </div>
         </section>
 
-        <hr>
+        <div class="not-supported-message">
+            <p>Screen size not supported</p>
+        </div>
     </main>
     <footer>Created for CSE 110</footer>
   </body>
