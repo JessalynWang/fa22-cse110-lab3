@@ -1,0 +1,68 @@
+/* global styling for custom font */
+* {
+    font-family: 'Raleway', 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header + footer styles */
+header {
+    display: block;
+    height: 2in;
+    color: rgb(216, 163, 89);
+    background-color: blanchedalmond;
+    font-size: 1cm;
+    font-weight: bold;
+}
+
+header > div {
+    display: inline-block;
+    margin: 80px 10px 20px 10px;
+}
+
+header > hr {
+    width: 50vw;
+    height: 0.25rem;
+    background-color: rgb(216, 163, 89);
+    border-style: solid;
+    border-color: rgb(216, 163, 89);
+    border-width: 1px;
+}
+
+.header-team {
+    display: inline;
+    color: rgb(149, 92, 0);
+    font-size: 1.25em;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr [col-start] 1fr [col-start] 1fr [col-start];
+    background-color: rgb(149, 92, 0);
+}
+
+nav > a, nav > a:visited, nav > a:active {
+    background-color: rgb(149, 92, 0);
+    color: hsl(100, 100%, 100%);
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+nav > a:hover {
+    background-color: hsla(30, 100%, 20%, 1);
+    transition: all 1s ease;
+}
+
+footer {
+    padding: 10px 0px 0px 10px;
+    display: block;
+    height: .5in;
+    color: rgb(216, 163, 89);
+    background-color: blanchedalmond;
+    font-size: 16px;
+    font-weight: bold;
+}
