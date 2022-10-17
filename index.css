@@ -2,7 +2,6 @@
 * {
     font-family: 'Raleway', 'Times New Roman', Times, serif;
     margin: 0;
-    padding: 0;
 }
 
 /* header + footer styles */
@@ -27,6 +26,7 @@ header > hr {
     border-style: solid;
     border-color: rgb(216, 163, 89);
     border-width: 1px;
+    margin: 0;
 }
 
 .header-team {
@@ -37,8 +37,11 @@ header > hr {
 
 nav {
     display: grid;
-    grid-template-columns: 1fr [col-start] 1fr [col-start] 1fr [col-start];
+    grid-template-columns: repeat(3, 1fr [col-start]);
     background-color: rgb(149, 92, 0);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav > a, nav > a:visited, nav > a:active {
@@ -65,4 +68,121 @@ footer {
     background-color: blanchedalmond;
     font-size: 16px;
     font-weight: bold;
+}
+
+/* main content styling */
+
+main {
+    margin: 10px;
+    color: rgb(149, 92, 0);
+}
+
+main hr {
+    margin: auto;
+    width: 80vw;
+    border: 2px solid rgb(210, 190, 170);
+    background-color: rgb(210, 190, 170);
+    border-radius: 10px;
+}
+
+/* Meeting title and notes */
+
+.metadata {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    justify-content: space-evenly;
+}
+
+div ~ div {
+    margin-bottom: 20px;
+}
+
+hr + p {
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+p.main-point {
+    font-size: 18px;
+    grid-area: header;
+}
+
+.during-meeting-notes > div {
+    grid-area: media;
+}
+
+.during-meeting-notes > ol {
+    grid-area: main;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.media {
+    max-width: 350px;
+    height: auto;
+}
+
+.during-meeting-notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "main main media media"
+        "main main media media";
+    gap: 10px;
+}
+
+.not-supported-message {
+    display: none;
+    min-width: 100vw;
+    height: 100vh;
+    background-color: rgb(149, 92, 0);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.anecdote {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#submit {
+    border: 1px solid rgb(149, 92, 0);
+    border-radius: 5px;
+    background-color: rgb(149, 92, 0);
+    color: blanchedalmond;
+}
+
+nav > a[target="_blank"] {
+    background-color: hsla(30, 100%, 20%, 1);
+}
+
+nav > a[target="_blank"]:hover {
+    background-color: rgb(149, 92, 0);
+}
+
+
+@media screen and (max-width: 725px) {
+    main {
+        margin: 0;
+    }
+
+    section {
+        display: none;
+    }
+
+    .metadata {
+        display: none;
+    }
+
+    .not-supported-message {
+        display: flex;
+    }
 }
