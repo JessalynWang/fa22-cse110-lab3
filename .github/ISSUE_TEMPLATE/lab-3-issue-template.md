@@ -7,8 +7,8 @@ assignees: JessalynWang
 
 ---
 
-**What changes were made?**
+**What changes will be made?**
 
 **What is the impact of the changes?**
 
-**How was this tested?**
+**How will this be tested?**
